@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string = prompt("Enter a string :");
+        let findChar = prompt("Enter a character you want to find :");
+        let flag = false;
+        for(let i = 0 ; i < string.length ; i++){
+            if(string[i] === findChar){
+                flag = true;
+                break;
+            }
+        }
+        if(flag){
+            document.write(`${findChar} is in ${string}`);
+        }else{
+            document.write(`${findChar} is not in ${string}`);
+        }
+    </script>
+</body>
+</html>

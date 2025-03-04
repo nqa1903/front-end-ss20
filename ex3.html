@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number = prompt("Enter a string number:");
+      if(!isNaN(number)) {
+        let mid = Math.floor(number.length / 2);
+        let isSymmetric = true;
+        for (let i = 0; i < mid; i++) {
+          if (number[i] !== number[number.length - 1 - i]) {
+            isSymmetric = false;
+            break;
+          }
+        }
+        if (isSymmetric) {
+          document.write(`${number} is symmetric`);
+        } else {
+          document.write(`${number} is not symmetric`);
+        }
+      } else {
+        document.write(`${number} cannot have characters`);
+      }
+    </script>
+  </body>
+</html>

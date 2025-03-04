@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Enter the number of factor : ");
+        let b = +prompt("Enter the number of exponent :");
+        let power = 1;
+        if(isNaN(a) || isNaN(b) || a.trim() === "" || b.trim() === ""){
+            document.write(`not vaid`);
+        }else{
+            for(let i = 1 ; i <= b ; i++){
+                power *= a;
+            }
+            document.write(`${a}^${b} = ${power}`);
+        }
+    </script>
+</body>
+</html>
